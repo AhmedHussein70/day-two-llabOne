@@ -1,0 +1,22 @@
+<div class="parentDispalyUsers">
+  @for (user of user; track $index) {
+  <div class="userCard">
+    <div class="parentIamge">
+      <img src="{{ user.image }}" alt="Image-User" />
+    </div>
+    <div class="contentUser">
+      <p>
+        <strong style="margin-right: 20px;">user name : </strong> {{ user.firstName }}
+        &scap;
+        <span [ngStyle]="{ color: user.role == 'admin' ? 'green' : 'red' }">
+          <fa-icon [icon]="faStar"></fa-icon>
+        </span>
+      </p>
+      <p><strong>Email : </strong>{{ user.email }}</p>
+      <p><strong>Phone : </strong>{{ user.phone }}</p>
+    </div>
+  </div>
+  } @empty {
+  <div class="dainger">No User Found</div>
+  }
+</div>

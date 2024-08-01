@@ -1,0 +1,19 @@
+<div class="card flex justify-content-center parent-search">
+  <h2>User</h2>
+  <div class="flex flex-column gap-2 inputParent">
+    <div style="width: 100%">
+      <input pInputText [(ngModel)]="value" placeholder="Seach" />
+      @if (isTrue) {
+      <button
+        type="submit"
+        (click)="value.length >= 1 ? addFromSearch(dataFromSearch) : ''"
+      >
+        Search
+      </button>
+      }@else {
+      <button type="submit" (click)="chageBtn()">reset</button>
+      }
+      
+    </div>
+  </div>
+</div>

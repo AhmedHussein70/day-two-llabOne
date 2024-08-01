@@ -1,0 +1,55 @@
+.parentDispalyUsers {
+  width: 80%;
+  margin: auto;
+  /* border: solid; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2rem 0;
+  margin-top: 4rem;
+}
+
+.userCard {
+  width: 16em;
+  height: 10em;
+  border: 1px solid skyblue;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+}
+.userCard .parentIamge,
+img {
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 50%;
+  margin: auto;
+  border: 1px sold #0a0a0a;
+}
+.contentUser p {
+  padding: 0;
+  /* margin-bottom:2px ; */
+  margin: 3px 0;
+  font-size: 0.8rem;
+}
+.contentUser p:nth-child(2) {
+  padding: 0px 0px;
+  margin: 3px 0;
+  font-size: 0.666rem;
+  /* word-wrap: ; */
+}
+.dainger {
+  width: 70%;
+  margin: auto;
+  padding: 3rem;
+  background-color: #ff333392;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 3rem;
+  text-align: center;
+}
